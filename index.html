@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--  метатеги для GitHub  -->
+    <meta property="og:url" content="https://github.com/art-henry" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="GitHub Profile: art-henry" />
+    <meta property="og:description" content="GitHub profile of art-henry" />
+    <meta property="og:image" content="https://github.com/art-henry.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Метатеги для Instagram -->
+    <meta
+      property="og:url"
+      content="https://instagram.com/mr_henry92?igshid=MjEwN2IyYWYwYw=="
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="frontend web-developer" />
+    <meta property="og:description" content="instagramm Henrik Mkhitarian" />
+    <meta
+      property="og:image"
+      content="https://media.licdn.com/dms/image/D4E03AQGt2ixRxWiR6w/profile-displayphoto-shrink_800_800/0/1690353567023?e=1695859200&v=beta&t=flmqEOTl2LhtwFhJS5J3-t9sinszRQdpS_WL3sxCQGw"
+    />
+    <!-- Метатеги для Facebook -->
+    <!-- <meta property="og:url" content="ссылка на вашу страницу" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="frontend web-developer" />
+    <meta
+      property="og:description"
+      content="portfolio frontend web-developer Henrik Mkhitarian"
+    />
+    <meta
+      property="og:image"
+      content="https://media.licdn.com/dms/image/D4E03AQGt2ixRxWiR6w/profile-displayphoto-shrink_800_800/0/1690353567023?e=1695859200&v=beta&t=flmqEOTl2LhtwFhJS5J3-t9sinszRQdpS_WL3sxCQGw"
+    /> -->
+    <!-- Метатеги для LinkedIn -->
+    <meta
+      property="og:url"
+      content="https://www.linkedin.com/in/henrik-mkhitarian-15604a192"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="frontend web-developer" />
+    <meta
+      property="og:description"
+      content="portfolio frontend web-developer Henrik Mkhitarian"
+    />
+    <meta
+      property="og:image"
+      content="https://media.licdn.com/dms/image/D4E03AQGt2ixRxWiR6w/profile-displayphoto-shrink_800_800/0/1690353567023?e=1695859200&v=beta&t=flmqEOTl2LhtwFhJS5J3-t9sinszRQdpS_WL3sxCQGw"
+    />
+    <meta
+      name="twitter:card"
+      content="https://media.licdn.com/dms/image/D4E03AQGt2ixRxWiR6w/profile-displayphoto-shrink_800_800/0/1690353567023?e=1695859200&v=beta&t=flmqEOTl2LhtwFhJS5J3-t9sinszRQdpS_WL3sxCQGw"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <aside class="sidepanel">
+      <div class="title">
+        <span class="title--little">Social networks</span>
+      </div>
+      <div class="line"></div>
+
+      <a
+        href="https://www.linkedin.com/in/henrik-mkhitarian-15604a192"
+        class="sidepanel__link"
+        target="_blank"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a
+        href="https://instagram.com/mr_henry92?igshid=MjEwN2IyYWYwYw=="
+        class="sidepanel__link"
+        target="_blank"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a
+        href="https://github.com/art-henry"
+        class="sidepanel__link"
+        target="_blank"
+      >
+        <i class="fab fa-github-square"></i>
+      </a>
+    </aside>
+    <div class="hamburger" id="hamburger">
+      <div class="hamburger__icon">
+        <div class="hamburger__icon__bar"></div>
+        <div class="hamburger__icon__bar"></div>
+        <div class="hamburger__icon__bar"></div>
+      </div>
+    </div>
+    <div class="menu" id="menu">
+      <div class="menu__block">
+        <a href="#about_me" class="menu__item">About me</a>
+        <a href="#resume" class="menu__item">My Experience</a>
+        <a href="#skills" class="menu__item">My Skills</a>
+        <a href="#portfolio" class="menu__item">My Portfolio</a>
+        <a href="#contacts" class="menu__item">My Contacts</a>
+        <!-- <a href="#" class="menu__item">Item 3</a> -->
+      </div>
+      <div class="menu__social">
+        <a
+          href="https://www.linkedin.com/in/henrik-mkhitarian-15604a192"
+          class="menu__social__link"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://instagram.com/mr_henry92?igshid=MjEwN2IyYWYwYw=="
+          class="menu__social__link"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://github.com/art-henry"
+          class="menu__social__link"
+          target="_blank"
+        >
+          <i class="fab fa-github-square"></i>
+        </a>
+      </div>
+    </div>
+    <section class="promo">
+      <div class="container">
+        <!-- Розділ для переключення мови -->
+        <div class="language-toggle">
+          <!-- Кнопка для переключення мови -->
+          <a href="index_ua.html" class="toggle-btn">
+            <span class="toggle-btn__text">UK</span>
+            <img
+              class="toggle-btn__icon"
+              src="icons/uk.png"
+              alt="Ukraine Flag"
+            />
+          </a>
+        </div>
+        <div class="promo__titles">
+          <div class="title">
+            <h2 class="title--little">My name is Henrik Mkhitarian</h2>
+          </div>
+          <h1 class="title">
+            <span class="title--big">I am web-developer from Odessa</span>
+          </h1>
+        </div>
+        <div class="promo__btns">
+          <a class="btn" href="#portfolio">Portfolio</a>
+          <a class="btn btn--transparent" href="#about_me"> About me </a>
+        </div>
+      </div>
+    </section>
+    <section class="about_me default_padding" id="about_me">
+      <div class="container">
+        <div class="about_me__content">
+          <div class="about_me__content__img"></div>
+          <div class="about_me__content__info">
+            <div class="title"><h3 class="title--little">About me</h3></div>
+            <div class="title"><span>My name is Henrik</span></div>
+            <div class="line-orange"></div>
+            <p class="text-section text-section--big">
+              I am a passionate and dedicated individual with a great interest
+              in frontend development. My educational background includes
+              participating in courses such as "Modern JavaScript + Vue from
+              Scratch on Real Projects" and "Frontend Web Development," where I
+              enhance my skills in HTML, CSS, and JavaScript.<br /><br />
+
+              I have not yet completed the "Modern JavaScript + Vue from Scratch
+              on Real Projects" course, but I plan to take it to learn Vue.js.
+              Through this course, I hope to strengthen my knowledge and gain
+              practical experience in development using Vue.js and other
+              cutting-edge frontend technologies.<br /><br />
+
+              Despite my formal education being in economics and enterprise
+              management, my passion for web development has driven me to pursue
+              self-education on platforms like Udemy and other online resources.
+              This self-directed learning has helped me expand my knowledge in
+              various areas of frontend development, including exploring
+              frameworks like React, Angular, and others.<br /><br />
+
+              While I am still in the process of gaining practical project
+              experience, I actively seek new challenges and opportunities to
+              continuously improve in frontend development.<br /><br />
+
+              With a creative approach, strong problem-solving skills, and a
+              determination to achieve high-quality results, I am enthusiastic
+              about taking on exciting frontend development projects and making
+              a contribution to creating visually appealing and interactive web
+              applications and websites that provide an exceptional user
+              experience. I look forward to the opportunity to make a positive
+              impact in the digital world.
+            </p>
+            <div class="about_me__content__skills">
+              <div class="about_me__content__skill">
+                <div class="about_me__content__skill__icon">
+                  <i class="fal fa-laptop-code"></i>
+                </div>
+                <div class="subtitle">Web-development</div>
+                <div class="text-section">
+                  Enthusiastic frontend developer with a foundation in web
+                  technologies, such as HTML, CSS, and various plugins. Skilled
+                  in crafting visually appealing and interactive web experiences
+                  to ensure exceptional user satisfaction.
+                </div>
+              </div>
+              <div class="about_me__content__skill">
+                <div class="about_me__content__skill__icon">
+                  <i class="fal fa-brackets-curly"></i>
+                </div>
+                <div class="subtitle">Js</div>
+                <div class="text-section">
+                  Proficient in JavaScript and eager to master Vue.js and other
+                  frameworks. Committed to harnessing the power of JavaScript to
+                  create dynamic and captivating web applications. Ready to take
+                  on exciting frontend projects and make a positive impact in
+                  the digital world.
+                </div>
+              </div>
+              <!-- <div class="about_me__content__skill">
+                <div class="about_me__content__skill__icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="subtitle">React</div>
+                <div class="text-section">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="resume default_padding" id="resume">
+      <div class="container">
+        <div class="title">
+          <h2 class="title--little title--little-center">Experience</h2>
+        </div>
+        <div class="title"><span>How will I be useful?</span></div>
+        <div class="line-orange"></div>
+        <div class="resume__wrapper">
+          <div class="resume__col">
+            <div class="title">
+              <span class="title--middle">Education</span>
+            </div>
+            <ul>
+              <li>
+                <div class="resume__item">
+                  <div class="resume__item-head">
+                    <div class="subtitle">
+                      <div class="resume__item-icon">
+                        <i class="fal fa-university"></i>
+                      </div>
+                      <span>National Economic University</span>
+                      <div class="resume__item-location text-section">
+                        Master's degree | Odessa (2009-2014)
+                      </div>
+                    </div>
+                    <p class="text-section">
+                      Overall, my education at the National Economics University
+                      has provided me with valuable competencies that
+                      effectively complement my technical knowledge and
+                      experience as a frontend developer. The combination of
+                      academic knowledge and personal qualities makes me more
+                      prepared for a successful career in web application and
+                      website development.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="resume__item">
+                  <div class="resume__item-head">
+                    <div class="subtitle">
+                      <div class="resume__item-icon">
+                        <i class="fal fa-laptop-code"></i>
+                      </div>
+                      <span>Udemy</span>
+                      <div class="resume__item-location text-section">
+                        Web-developer
+                      </div>
+                    </div>
+                    <p class="text-section">
+                      I completed a web developer course on Udemy. Throughout
+                      the course, I gained in-depth knowledge of HTML, CSS, and
+                      various frontend technologies, allowing me to create
+                      visually appealing and responsive web designs. While the
+                      course did not cover JavaScript, it provided me with a
+                      solid foundation in frontend principles and best
+                      practices. The hands-on projects and real-world exercises
+                      in the course helped me refine my web development skills
+                      and prepared me to tackle complex frontend challenges.
+                      This Udemy course was a valuable stepping stone in my
+                      career, enhancing my ability to build engaging and
+                      user-friendly websites.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="resume__item">
+                  <div class="resume__item-head">
+                    <div class="subtitle">
+                      <div class="resume__item-icon">
+                        <i class="fal fa-brackets-curly"></i>
+                      </div>
+                      <span>Udemy</span>
+                      <div class="resume__item-location text-section">
+                        Modern JavaScript + Vue from Scratch on Real Projects
+                      </div>
+                    </div>
+                    <p class="text-section">
+                      Currently enrolled in the "Modern JavaScript + Vue from
+                      Scratch on Real Projects" course, advancing my skills in
+                      JavaScript and looking forward to mastering Vue.js for
+                      dynamic web development. Excited about creating engaging
+                      web experiences and becoming a proficient frontend
+                      developer.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="resume__col">
+            <div class="title">
+              <span class="title--middle">Experience</span>
+            </div>
+            <ul>
+              <li>
+                <div class="resume__item">
+                  <div class="resume__item-head">
+                    <div class="subtitle">
+                      <div class="resume__item-icon">
+                        <i class="fal fa-cogs"></i>
+                      </div>
+                      <span>JavaScript + Vue on Real Projects </span>
+                      <div class="resume__item-location text-section">
+                        Udemy
+                      </div>
+                    </div>
+                    <p class="text-section">
+                      Studied fundamental JavaScript principles, including
+                      variables, functions, and loops.<br />
+                      Engaged in practical assignments to deepen understanding
+                      and apply concepts.<br />
+                      Created simple interfaces using JavaScript.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="resume__item">
+                  <div class="resume__item-head">
+                    <div class="subtitle">
+                      <div class="resume__item-icon">
+                        <i class="fal fa-browser"></i>
+                      </div>
+                      <span>Frontend Web Development</span>
+                      <div class="resume__item-location text-section">
+                        Udemy
+                      </div>
+                    </div>
+                    <p class="text-section">
+                      Mastered HTML and CSS for creating webpage structure and
+                      styles.<br />
+                      Completed practical projects on webpage layout and
+                      responsive design.<br />
+                      Introduced to JavaScript and its application for adding
+                      interactivity to webpages.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="resume__item">
+                  <div class="resume__item-head">
+                    <div class="subtitle">
+                      <div class="resume__item-icon">
+                        <i class="fal fa-book-reader"></i>
+                      </div>
+                      <span>Self-Education on different Online Resources</span>
+                      <div class="resume__item-location text-section">
+                        Udemy and Other Online Resources
+                      </div>
+                    </div>
+                    <p class="text-section">
+                      Expanded knowledge in various frontend development areas,
+                      including React, Angular, and Vue.js (currently in
+                      progress).<br />
+                      Practiced coding and problem-solving with new
+                      technologies.<br />
+                      Explored current trends in web development and implemented
+                      them in educational projects.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills default_padding" id="skills">
+      <div class="container">
+        <div class="title">
+          <h2 class="title--little title--little-center">Skills</h2>
+        </div>
+        <div class="title"><span>What do I use in my work?</span></div>
+        <div class="line-orange"></div>
+        <div class="skills__wrapper-tools">
+          <div class="skills__item">
+            <div class="skills__icon">
+              <img src="icons/html5.svg" alt="html" />
+            </div>
+            <div class="subtitle"><span>HTML5</span></div>
+            <p class="text-section">
+              HTML serves as the foundation for your website or application, and
+              with the fifth version, I will be able to establish a highly
+              SEO-optimized structure for your product.
+            </p>
+          </div>
+          <div class="skills__item">
+            <div class="skills__icon">
+              <img src="icons/css3.svg" alt="css3" />
+            </div>
+            <div class="subtitle"><span>CSS3</span></div>
+            <p class="text-section">
+              This styling language allows me to create any appearance for your
+              website or application. The only limit is your imagination!
+            </p>
+          </div>
+          <div class="skills__item">
+            <div class="skills__icon"><i class="fab fa-js-square"></i></div>
+            <div class="subtitle"><span>Java Script</span></div>
+            <p class="text-section">
+              This programming language allows you to bring nearly anything to
+              life: sliders, windows, tooltips, tabs, fetching data from the
+              server, and much more.
+            </p>
+          </div>
+          <div class="skills__item">
+            <div class="skills__icon">
+              <img src="icons/Jquery.svg" alt="jquery" />
+            </div>
+            <div class="subtitle"><span>Jquery</span></div>
+            <p class="text-section">
+              The jQuery library can expedite development. While we won't
+              integrate it into the project unless required, I possess the
+              necessary skills to work with it effectively.
+            </p>
+          </div>
+          <!-- <div class="skills__item">
+            <div class="skills__icon"><i class="fab fa-react"></i></div>
+            <div class="subtitle"><span>React</span></div>
+            <p class="text-section">
+              The React library enables the development of web applications. We
+              can create a product that perfectly suits your objectives, with
+              maximum interactivity.
+            </p>
+          </div>
+          <div class="skills__item">
+            <div class="skills__icon">
+              <img src="icons/Node.js.svg" alt="node.js" />
+            </div>
+            <div class="subtitle"><span>Node.js</span></div>
+            <p class="text-section">
+              HTML serves as the foundation for your website or application, and
+              with the fifth version, I will be able to establish a highly
+              SEO-optimized structure for your product.
+            </p>
+          </div> -->
+        </div>
+        <div class="skills__wrapper-level default_padding">
+          <div class="skills__level">
+            <div class="title">
+              <span class="title--little subtitle">Website development</span>
+              <span class="skills__counter text-section">75%</span>
+            </div>
+            <div class="skills__bar"><span></span></div>
+          </div>
+          <div class="skills__level">
+            <div class="title">
+              <span class="title--little subtitle"
+                >Application development</span
+              >
+              <span class="skills__counter text-section">60%</span>
+            </div>
+            <div class="skills__bar"><span></span></div>
+          </div>
+          <div class="skills__level">
+            <div class="title">
+              <span class="title--little subtitle">Data handling</span>
+              <span class="skills__counter text-section">70%</span>
+            </div>
+            <div class="skills__bar"><span></span></div>
+          </div>
+          <div class="skills__level">
+            <div class="title">
+              <span class="title--little subtitle">Creativity</span>
+              <span class="skills__counter text-section">50%</span>
+            </div>
+            <div class="skills__bar"><span></span></div>
+          </div>
+          <div class="skills__level">
+            <div class="title">
+              <span class="title--little subtitle">Soft skills</span>
+              <span class="skills__counter text-section">80%</span>
+            </div>
+            <div class="skills__bar"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio default_padding" id="portfolio">
+      <div class="container">
+        <div class="title">
+          <h2 class="title--little title--little-center">Portfolio</h2>
+        </div>
+        <div class="title"><span>My works</span></div>
+        <div class="line-orange"></div>
+        <div class="portfolio__wrapper">
+          <a href="/pulse" class="portfolio__item vertical" target="_blank">
+            <img src="img/portfolio/pulse.jpg" alt="pulse" />
+          </a>
+          <a href="/uber" class="portfolio__item horizontal" target="_blank">
+            <img src="img/portfolio/uber.jfif" alt="uber" />
+          </a>
+          <a href="/dashboard" class="portfolio__item" target="_blank">
+            <img src="img/portfolio/dashboard.jpg" alt="dashboard" />
+          </a>
+          <a href="/landing" class="portfolio__item" target="_blank">
+            <img src="img/portfolio/landing.png" alt="landing" />
+          </a>
+          <a
+            href="/webstore"
+            class="portfolio__item horizontal"
+            target="_blank"
+          >
+            <img src="img/portfolio/webstore.jpg" alt="webstore" />
+          </a>
+          <!-- <a href="#" class="portfolio__item" target="_blank"
+            ><img src="img/portfolio/uber.jfif" alt="uber"
+          /></a> -->
+        </div>
+      </div>
+    </section>
+    <!-- <section class="price-list small_padding">
+      <div class="container">
+        <div class="title">
+          <h2 class="title--little title--little-center">Price list</h2>
+        </div>
+        <div class="line-orange"></div>
+        <div class="price-list__wrapper small_padding">
+          <div class="price-list__item">
+            <div class="title-section">
+              <div class="subtitle">Landing-page</div>
+              <div class="subtitle">Individual</div>
+            </div>
+            <div class="text-section">
+              <span>One-page website for presenting services/products/...</span>
+            </div>
+          </div>
+          <div class="price-list__item">
+            <div class="title-section">
+              <div class="subtitle">Landing-page</div>
+              <div class="subtitle">Individual</div>
+            </div>
+            <div class="text-section">
+              <span>One-page website for presenting services/products/...</span>
+            </div>
+          </div>
+          <div class="price-list__item">
+            <div class="title-section">
+              <div class="subtitle">Landing-page</div>
+              <div class="subtitle">Individual</div>
+            </div>
+            <div class="text-section">
+              <span>One-page website for presenting services/products/...</span>
+            </div>
+          </div>
+          <div class="price-list__item">
+            <div class="title-section">
+              <div class="subtitle">Landing-page</div>
+              <div class="subtitle">Individual</div>
+            </div>
+            <div class="text-section">
+              <span>One-page website for presenting services/products/...</span>
+            </div>
+          </div>
+          <div class="price-list__item">
+            <div class="title-section">
+              <div class="subtitle">Landing-page</div>
+              <div class="subtitle">Individual</div>
+            </div>
+            <div class="text-section">
+              <span>One-page website for presenting services/products/...</span>
+            </div>
+          </div>
+          <div class="price-list__item">
+            <div class="title-section">
+              <div class="subtitle">Landing-page</div>
+              <div class="subtitle">Individual</div>
+            </div>
+            <div class="text-section">
+              <span>One-page website for presenting services/products/...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="contacts default_padding" id="contacts">
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <p id="modal-message">Повідомлення було відправлено</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__img"></div>
+          <div class="contacts__info">
+            <div class="title"><h2 class="title--little">Contacts</h2></div>
+            <div class="title"><span>Contact me</span></div>
+            <div class="line-orange"></div>
+            <div class="subtitle">By any convenient means for you:</div>
+            <div class="icon-section">
+              <a
+                href="https://www.linkedin.com/in/henrik-mkhitarian-15604a192/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://t.me/henrik_dev" target="_blank">
+                <i class="fab fa-telegram"></i>
+              </a>
+              <a href="https://wa.me/420792435436" target="_blank">
+                <i class="fab fa-whatsapp-square"></i>
+              </a>
+              <a
+                href="https://join.skype.com/invite/bGFxp87EeZRJ"
+                target="_blank"
+              >
+                <i class="fab fa-skype"></i>
+              </a>
+              <a href="mailto:henrikdevmail@gmail.com" target="_blank">
+                <i class="fas fa-envelope-open-text"></i>
+              </a>
+              <a href="tel:+420792435436" target="_blank">
+                <i class="fas fa-mobile"></i>
+              </a>
+            </div>
+
+            <div class="subtitle">
+              Or leave your contact information, and I will write to you myself:
+            </div>
+            <form action="#" class="contacts__form">
+              <div class="contacts__input">
+                <input required name="name" id="name" type="text" />
+                <label for="name">Your name</label>
+              </div>
+              <div class="contacts__input">
+                <input required name="email" id="email" type="email" />
+                <label for="email">Your mail</label>
+              </div>
+              <div class="contacts__textarea">
+                <textarea name="text" id="text"></textarea>
+                <label for="text">Your message</label>
+              </div>
+              <div class="contacts__triggers">
+                <button class="btn">Sent message</button>
+                <div class="contacts__policy">
+                  <input required type="checkbox" id="privacy-policy" />
+                  <span
+                    >I have read and agree to the
+                    <a href="/policy.html">privacy policy</a></span
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
