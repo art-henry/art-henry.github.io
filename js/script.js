@@ -9,6 +9,9 @@
       modal.style.display = "none";
     }, 3000); // Закривати автоматично після 3 секунд
   }
+  modal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
 
   window.addEventListener("load", function () {
     function handleLinkClick(event) {
