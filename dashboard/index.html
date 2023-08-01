@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Template</title>
+
+    <!--    GOOGLE FONTS    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--     FontAwesome    -->
+    <!--    <script src="https://kit.fontawesome.com/6da620d6e4.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="css/fontawesome.css" />
+
+    <!--    Bootstrap    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Slick carousel  -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER START -->
+
+    <header class="fixed-to-top header">
+      <div
+        class="top-header flex-container container-default justify-content-space-between align-items-center"
+      >
+        <div class="menu-btn">
+          <span></span>
+          <span class="longer-btn-span"></span>
+          <span></span>
+        </div>
+        <div class="user-controls flex-container align-items-center">
+          <div class="position-block">
+            <div
+              class="toggle-mode flex-container justify-content-center align-items-center icons-padding"
+            >
+              <label id="dark-mode" for="toggle-mode">
+                <i class="fal fa-moon"></i>
+              </label>
+              <input type="checkbox" class="checkbox" id="toggle-mode" />
+              <label class="toggle" for="toggle-mode"></label>
+              <label id="light-mode" for="toggle-mode">
+                <i class="fal fa-sun active-mode-icon"></i>
+              </label>
+            </div>
+          </div>
+
+          <div
+            class="globe flex-container justify-content-center align-items-center icons-padding"
+          >
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle"
+                type="button"
+                id="globeMenu"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true"
+              >
+                <i class="fal fa-globe"></i>
+                <i class="fal fa-chevron-down vertical-align-super"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="globeMenu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="comments flex-container align-items-center icons-padding">
+            <a href="">
+              <i class="fal fa-comments"></i>
+            </a>
+          </div>
+          <div class="user flex-container align-items-center cursor-pointer">
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle flex-container align-items-center"
+                type="button"
+                id="userDropMenu"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true"
+              >
+                <img class="small-img-square" src="img/examle.jpg" alt="" />
+                <span>Генрих</span>
+                <i class="fal fa-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="userDropMenu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bottom-header flex-container container-default justify-content-space-between align-items-center"
+      >
+        <div class="small-title uppercase">Личный кабинет</div>
+
+        <div>
+          <a href="" class="link">Главная</a>
+          <span>/</span>
+          <a href="" class="link">Личный кабинет</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- ASIDE START -->
+
+    <aside class="aside fixed-to-top">
+      <div class="scrollbar-inner">
+        <ul class="menu-control">
+          <li
+            class="logo menu-block flex-container justify-content-center align-items-center"
+          >
+            <a
+              href=""
+              class="logo-default width-100 flex-container align-items-center justify-content-center"
+              >LOGO.</a
+            >
+          </li>
+          <li
+            class="active menu-block account flex-container align-items-center"
+          >
+            <a href="" class="width-100 flex-container align-items-center">
+              <i class="far fa-tachometer-fast"></i>
+              <span class="menu-link">Личный кабинет</span>
+            </a>
+          </li>
+          <li class="menu-block shop flex-container align-items-center">
+            <a href="" class="width-100 flex-container align-items-center">
+              <i class="far fa-shopping-cart"></i>
+              <span class="menu-link">Магазин</span>
+            </a>
+          </li>
+          <li
+            class="menu-block dropdown-link transform flex-container justify-content-space-between align-items-center flex-wrap"
+          >
+            <a
+              role="button"
+              data-target="#chevronOpenStructure, #chevronCloseStructure, #menuStructure"
+              data-toggle="collapse"
+              class="width-100 flex-container align-items-center"
+            >
+              <i class="far fa-users"></i>
+              <span class="menu-link">Структура</span>
+              <span
+                id="chevronOpenStructure"
+                class="collapse in flex-grow-1 text-align-right"
+              >
+                <i
+                  class="fal fa-chevron-down cursor-pointer flex-grow-1 text-align-right"
+                ></i>
+              </span>
+              <span
+                id="chevronCloseStructure"
+                class="collapse flex-grow-1 text-align-right"
+              >
+                <i
+                  class="fal fa-chevron-up cursor-pointer flex-grow-1 text-align-right"
+                ></i>
+              </span>
+            </a>
+
+            <ul id="menuStructure" class="structure-menu collapse width-100">
+              <li>
+                <a href="">1</a>
+              </li>
+              <li>
+                <a href="">2</a>
+              </li>
+              <li>
+                <a href="">3</a>
+              </li>
+              <li>
+                <a href="">4</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-block transform flex-container align-items-center">
+            <a href="" class="width-100 flex-container align-items-center">
+              <i class="far fa-wallet"></i>
+              <span class="menu-link">Кошельки</span>
+            </a>
+          </li>
+          <li
+            class="menu-block dropdown-link transform flex-container justify-content-space-between align-items-center flex-wrap"
+          >
+            <a
+              role="button"
+              data-toggle="collapse"
+              data-target="#menuStatistic, #chevronOpenStatistic, #chevronCloseStatistic"
+              class="width-100 flex-container align-items-center"
+            >
+              <i class="far fa-chart-area"></i>
+              <span class="menu-link">Статистика</span>
+              <span
+                id="chevronOpenStatistic"
+                class="cursor-pointer collapse in flex-grow-1 text-align-right"
+              >
+                <i class="fal fa-chevron-down text-align-right"></i>
+              </span>
+              <span
+                id="chevronCloseStatistic"
+                class="cursor-pointer collapse flex-grow-1 text-align-right"
+              >
+                <i class="fal fa-chevron-up text-align-right"></i>
+              </span>
+            </a>
+
+            <ul id="menuStatistic" class="structure-menu collapse width-100">
+              <li>
+                <a href="">1</a>
+              </li>
+              <li>
+                <a href="">2</a>
+              </li>
+              <li>
+                <a href="">3</a>
+              </li>
+              <li>
+                <a href="">4</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-block transform flex-container align-items-center">
+            <a href="" class="width-100 flex-container align-items-center">
+              <i class="far fa-envelope-open"></i>
+              <span class="menu-link">Сообщения</span>
+            </a>
+          </li>
+          <li class="menu-block transform flex-container align-items-center">
+            <a href="" class="width-100 flex-container align-items-center">
+              <i class="far fa-calendar"></i>
+              <span class="menu-link">Календарь</span>
+            </a>
+          </li>
+          <li class="menu-block transform flex-container align-items-center">
+            <a href="" class="width-100 flex-container align-items-center">
+              <i class="far fa-question-circle"></i>
+              <span class="menu-link">FAQ</span>
+            </a>
+          </li>
+          <li class="menu-block transform flex-container align-items-center">
+            <a href="" class="width-100 flex-container align-items-center">
+              <i class="far fa-headset"></i>
+              <span class="menu-link">Поддержка</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- ASIDE END -->
+
+    <!-- MAIN START -->
+
+    <main>
+      <div class="container-default hide-lg flex-container">
+        <div class="column-1-33-calc flex-container flex-column">
+          <div class="user-status block-fluid flex-container flex-wrap">
+            <div class="user-img">
+              <img src="img/examle.jpg" alt="" class="circle-img-square" />
+            </div>
+            <div
+              class="user-info flex-container flex-column justify-content-space-around"
+            >
+              <div class="large-title">Генрих Мхитарян</div>
+              <span class="nickname">henrik</span>
+              <div
+                class="status-info flex-container align-items-center justify-content-center"
+              >
+                Профи
+              </div>
+            </div>
+            <div
+              class="status-data width-100 flex-container align-items-center justify-content-space-between"
+            >
+              <div
+                class="dropdown column-1-33 link-section flex-container justify-content-center align-items-center"
+              >
+                <button
+                  class="dropdown-toggle flex-container align-items-center"
+                  type="button"
+                  id="linkDropMenu"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="true"
+                >
+                  <i class="fal fa-link"></i>
+                  <span class="fas fa-chevron-down arrow-large"></span>
+                </button>
+
+                <ul class="dropdown-menu" aria-labelledby="linkDropMenu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div
+                class="column-1-33 user-id-card height-100 flex-container flex-column justify-content-space-around text-align-center"
+              >
+                <i class="fal fa-id-card-alt"></i>
+                <span>234 488 20</span>
+              </div>
+              <div
+                class="column-1-33 login-sponsor height-100 flex-container flex-column justify-content-space-around text-align-center"
+              >
+                <i class="fal fa-user-tie"></i>
+                <span>loginsponsor</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="referral-link block-fluid flex-container flex-wrap justify-content-space-between align-items-center"
+          >
+            <div class="uppercase section-title width-100">
+              <span>РЕФЕРАЛЬНАЯ ССЫЛКА</span>
+            </div>
+            <div class="text-section-grey">
+              <span>Ваша реферальная ссылка</span>
+            </div>
+            <button class="btn btn-default">
+              <i class="far fa-copy"></i>
+              <span>Копировать</span>
+            </button>
+          </div>
+          <div
+            class="user-wallets block-fluid flex-container flex-wrap justify-content-space-between"
+          >
+            <div
+              class="flex-container width-100 align-items-center justify-content-space-between flex-wrap"
+            >
+              <div
+                class="uppercase section-title width-100 flex-container justify-content-space-between align-items-center"
+              >
+                <span>СТАТИСТИКА</span>
+                <button
+                  class="width-100 flex-container justify-content-flex-end align-items-center"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#userWalletsShowClose, #chevronUp, #chevronDown"
+                  aria-expanded="true"
+                  aria-controls="userWalletsShowClose"
+                >
+                  <span id="chevronUp" class="collapse in"
+                    ><i class="fas fa-chevron-up arrow-large"></i
+                  ></span>
+
+                  <span id="chevronDown" class="collapse"
+                    ><i class="fas fa-chevron-down arrow-large"></i
+                  ></span>
+                </button>
+              </div>
+
+              <div
+                id="userWalletsShowClose"
+                class="collapse in width-100 hide-section"
+              >
+                <div class="well">
+                  <div
+                    class="user-balance width-100 border-bottom flex-container align-items-center justify-content-space-between flex-wrap"
+                  >
+                    <div
+                      class="circle-bgc-square blue flex-container justify-content-center align-items-center"
+                    >
+                      <i class="far fa-wallet icons-font-17 white"></i>
+                    </div>
+                    <div class="text-section-grey">Ваш баланс</div>
+                    <div class="cash-section flex-grow-1 text-align-right">
+                      $ 3 662<span class="decimal-section">.72</span>
+                    </div>
+                    <div
+                      class="button-section flex-container text-align-right width-100 justify-content-flex-end"
+                    >
+                      <button class="btn btn-border">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>Пополнить</span>
+                      </button>
+                      <button class="btn btn-border">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Вывести</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bonus-section width-100 border-bottom flex-container align-items-center justify-content-space-between flex-wrap"
+                  >
+                    <div
+                      class="circle-bgc-square violet flex-container justify-content-center align-items-center"
+                    >
+                      <i class="far fa-gift-card icons-font-17 white"></i>
+                    </div>
+                    <div class="text-section-grey">Бонусный кошелек</div>
+                    <div class="cash-section flex-grow-1 text-align-right">
+                      $ 14 357<span class="decimal-section">.13</span>
+                    </div>
+                    <div
+                      class="button-section flex-container text-align-right width-100 justify-content-flex-end"
+                    >
+                      <button class="btn btn-border">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Вывести</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="cashback-section width-100 flex-container align-items-center justify-content-space-between flex-wrap"
+                  >
+                    <div
+                      class="circle-bgc-square green flex-container justify-content-center align-items-center"
+                    >
+                      <i
+                        class="far fa-credit-card-front icons-font-17 white"
+                      ></i>
+                    </div>
+                    <div class="text-section-grey">Ваш кэшбэк за все время</div>
+                    <div class="cash-section flex-grow-1 text-align-right">
+                      $ 82 357<span class="decimal-section">.13</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-section width-100">
+            <div class="img-section">
+              <div class="slides">
+                <div>
+                  <div
+                    class="image-wrap justify-content-center flex-container align-items-center"
+                  >
+                    <img src="img/news-img.jpg" alt="" />
+                  </div>
+
+                  <div class="block-fluid">
+                    <div
+                      class="date-comments-section text-section-grey flex-container flex-wrap"
+                    >
+                      <div class="date">
+                        <i class="fal fa-calendar-alt"></i>
+                        <span> 29 июл. / 2020 </span>
+                      </div>
+                      <a href="" class="comments">
+                        <i class="fal fa-comments-alt"></i>
+                        <span> 125</span>
+                      </a>
+                    </div>
+
+                    <div class="news-title text-align-left">
+                      <span
+                        >Лучшее за неделю: product RED, новые AirPods...</span
+                      >
+                    </div>
+
+                    <div class="button-section flex-container">
+                      <button class="btn btn-default">
+                        <span>Подробнее</span>
+                      </button>
+                      <button class="btn btn-border">
+                        <span>Ко всем новостям</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="image-wrap justify-content-center flex-container align-items-center"
+                  >
+                    <img src="img/news-img-2.jpg" alt="" />
+                  </div>
+
+                  <div class="block-fluid">
+                    <div
+                      class="date-comments-section text-section-grey flex-container flex-wrap"
+                    >
+                      <div class="date">
+                        <i class="fal fa-calendar-alt"></i>
+                        <span> 29 июл. / 2020 </span>
+                      </div>
+                      <a href="" class="comments">
+                        <i class="fal fa-comments-alt"></i>
+                        <span> 125</span>
+                      </a>
+                    </div>
+
+                    <div class="news-title text-align-left">
+                      <span
+                        >Лучшее за неделю: product RED, новые AirPods и
+                        блаблабла...</span
+                      >
+                    </div>
+
+                    <div class="button-section flex-container">
+                      <button class="btn btn-default">
+                        <span>Подробнее</span>
+                      </button>
+                      <button class="btn btn-border">
+                        <span>Ко всем новостям</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div
+                    class="image-wrap justify-content-center flex-container align-items-center"
+                  >
+                    <img src="img/news-img-3.jpg" alt="" />
+                  </div>
+
+                  <div class="block-fluid">
+                    <div
+                      class="date-comments-section text-section-grey flex-container flex-wrap"
+                    >
+                      <div class="date">
+                        <i class="fal fa-calendar-alt"></i>
+                        <span> 29 июл. / 2020 </span>
+                      </div>
+                      <a href="" class="comments">
+                        <i class="fal fa-comments-alt"></i>
+                        <span> 125</span>
+                      </a>
+                    </div>
+
+                    <div class="news-title text-align-left">
+                      <span
+                        >Лучшее за неделю: product RED, новые AirPods...</span
+                      >
+                    </div>
+
+                    <div class="button-section flex-container">
+                      <button class="btn btn-default">
+                        <span>Подробнее</span>
+                      </button>
+                      <button class="btn btn-border">
+                        <span>Ко всем новостям</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div
+                    class="image-wrap justify-content-center flex-container align-items-center"
+                  >
+                    <img src="img/news-img-4.jpg" alt="" />
+                  </div>
+
+                  <div class="block-fluid">
+                    <div
+                      class="date-comments-section text-section-grey flex-container flex-wrap"
+                    >
+                      <div class="date">
+                        <i class="fal fa-calendar-alt"></i>
+                        <span> 29 июл. / 2020 </span>
+                      </div>
+                      <a href="" class="comments">
+                        <i class="fal fa-comments-alt"></i>
+                        <span> 125</span>
+                      </a>
+                    </div>
+
+                    <div class="news-title text-align-left">
+                      <span
+                        >Лучшее за неделю: product RED, новые AirPods...</span
+                      >
+                    </div>
+
+                    <div class="button-section flex-container">
+                      <button class="btn btn-default">
+                        <span>Подробнее</span>
+                      </button>
+                      <button class="btn btn-border">
+                        <span>Ко всем новостям</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scrollbar-inner block-fluid">
+            <div class="table buy block-fluid">
+              <div class="section-title uppercase">
+                <span>МОИ ПОКУПКИ</span>
+              </div>
+
+              <table class="width-100">
+                <tr>
+                  <th class="text-align-left">#</th>
+                  <th class="text-align-left">ТИП</th>
+                  <th class="text-align-left">ДАТА БРОН.</th>
+                  <th class="text-align-right">СТОИМОСТЬ</th>
+                  <th>КОЛ-ВО</th>
+                  <th class="text-align-right">КЭШБЕК</th>
+                </tr>
+
+                <tr>
+                  <td class="hover">1</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">2</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">3</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">4</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">5</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">6</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">7</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">8</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="news-section width-100 hide-section">
+            <div class="img-section">
+              <div class="slides">
+                <div>
+                  <div
+                    class="image-wrap justify-content-center flex-container align-items-center"
+                  >
+                    <img src="img/news-img.jpg" alt="" />
+                  </div>
+
+                  <div class="block-fluid">
+                    <div
+                      class="date-comments-section text-section-grey flex-container flex-wrap"
+                    >
+                      <div class="date">
+                        <i class="fal fa-calendar-alt"></i>
+                        <span> 29 июл. / 2020 </span>
+                      </div>
+                      <a href="" class="comments">
+                        <i class="fal fa-comments-alt"></i>
+                        <span> 125</span>
+                      </a>
+                    </div>
+
+                    <div class="news-title text-align-left">
+                      <span
+                        >Лучшее за неделю: product RED, новые AirPods и
+                        блаблабла...</span
+                      >
+                    </div>
+
+                    <div class="button-section flex-container">
+                      <button class="btn btn-default">
+                        <span>Подробнее</span>
+                      </button>
+                      <button class="btn btn-border">
+                        <span>Ко всем новостям</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="image-wrap justify-content-center flex-container align-items-center"
+                  >
+                    <img src="img/news-img-2.jpg" alt="" />
+                  </div>
+
+                  <div class="block-fluid">
+                    <div
+                      class="date-comments-section text-section-grey flex-container flex-wrap"
+                    >
+                      <div class="date">
+                        <i class="fal fa-calendar-alt"></i>
+                        <span> 29 июл. / 2020 </span>
+                      </div>
+                      <a href="" class="comments">
+                        <i class="fal fa-comments-alt"></i>
+                        <span> 125</span>
+                      </a>
+                    </div>
+
+                    <div class="news-title text-align-left">
+                      <span
+                        >Лучшее за неделю: product RED, новые AirPods и
+                        блаблабла...</span
+                      >
+                    </div>
+
+                    <div class="button-section flex-container">
+                      <button class="btn btn-default">
+                        <span>Подробнее</span>
+                      </button>
+                      <button class="btn btn-border">
+                        <span>Ко всем новостям</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div
+                    class="image-wrap justify-content-center flex-container align-items-center"
+                  >
+                    <img src="img/news-img-3.jpg" alt="" />
+                  </div>
+
+                  <div class="block-fluid">
+                    <div
+                      class="date-comments-section text-section-grey flex-container flex-wrap"
+                    >
+                      <div class="date">
+                        <i class="fal fa-calendar-alt"></i>
+                        <span> 29 июл. / 2020 </span>
+                      </div>
+                      <a href="" class="comments">
+                        <i class="fal fa-comments-alt"></i>
+                        <span> 125</span>
+                      </a>
+                    </div>
+
+                    <div class="news-title text-align-left">
+                      <span
+                        >Лучшее за неделю: product RED, новые AirPods и
+                        блаблабла...</span
+                      >
+                    </div>
+
+                    <div class="button-section flex-container">
+                      <button class="btn btn-default">
+                        <span>Подробнее</span>
+                      </button>
+                      <button class="btn btn-border">
+                        <span>Ко всем новостям</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div
+                    class="image-wrap justify-content-center flex-container align-items-center"
+                  >
+                    <img src="img/news-img-4.jpg" alt="" />
+                  </div>
+
+                  <div class="block-fluid">
+                    <div
+                      class="date-comments-section text-section-grey flex-container flex-wrap"
+                    >
+                      <div class="date">
+                        <i class="fal fa-calendar-alt"></i>
+                        <span> 29 июл. / 2020 </span>
+                      </div>
+                      <a href="" class="comments">
+                        <i class="fal fa-comments-alt"></i>
+                        <span> 125</span>
+                      </a>
+                    </div>
+
+                    <div class="news-title text-align-left">
+                      <span
+                        >Лучшее за неделю: product RED, новые AirPods и
+                        блаблабла...</span
+                      >
+                    </div>
+
+                    <div class="button-section flex-container">
+                      <button class="btn btn-default">
+                        <span>Подробнее</span>
+                      </button>
+                      <button class="btn btn-border">
+                        <span>Ко всем новостям</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-66-calc width-100 flex-container flex-wrap">
+          <div
+            class="column-50-calc license-validity block-fluid flex-container flex-wrap justify-content-space-between align-items-center"
+          >
+            <div
+              class="validity flex-container flex-wrap justify-content-space-around align-items-center width-100"
+            >
+              <div class="section-title">
+                <i class="far fa-check"></i>
+                <span> Лицензия активна</span>
+              </div>
+
+              <div
+                class="license-toggle border-block-section flex-container align-items-center"
+              >
+                <span>Автопродление</span>
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label class="toggle" for="checkbox"></label>
+              </div>
+            </div>
+
+            <div class="border-block width-100"></div>
+
+            <div class="license-term width-100 flex-container flex-wrap">
+              <div class="section-title width-100 bottom-indent">
+                <span>До окончания лицензии</span>
+              </div>
+              <div
+                class="end-term-section width-100 bottom-indent flex-container flex-wrap justify-content-space-between align-items-center"
+              >
+                <div class="end-term">
+                  <span>11 д.</span>
+                  <span>7 ч.</span>
+                  <span>15 м.</span>
+                  <span>58 с.</span>
+                </div>
+                <div class="end-date">
+                  <span>19 янв. 2019 (пт)</span>
+                </div>
+              </div>
+              <div class="progress width-100 bottom-indent">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 70%"
+                ></div>
+              </div>
+            </div>
+            <div class="button-section flex-container">
+              <button class="btn btn-default">
+                <span>Продлить</span>
+              </button>
+              <button class="btn btn-border">
+                <span>Активировать код</span>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="scrollbar-inner sale-statistic column-50-calc block-fluid flex-container flex-wrap justify-content-space-between"
+          >
+            <div
+              class="sale-statistic block-fluid flex-container flex-wrap justify-content-space-between"
+            >
+              <div
+                class="section-title uppercase width-100 flex-container justify-content-space-between align-items-center"
+              >
+                <span>Статистика продаж</span>
+                <ul
+                  class="nav nav-tabs radio-button-section flex-container align-items-center"
+                  role="tablist"
+                >
+                  <li>
+                    <a
+                      href="#home"
+                      class="radio-button"
+                      aria-controls="home"
+                      role="tab"
+                      data-toggle="tab"
+                    ></a>
+                  </li>
+                  <li class="active">
+                    <a
+                      href="#profile"
+                      class="radio-button"
+                      aria-controls="profile"
+                      role="tab"
+                      data-toggle="tab"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tab panes -->
+              <div class="tab-content width-100">
+                <div
+                  role="tabpanel"
+                  class="personal-statistic tab-pane fade"
+                  id="home"
+                >
+                  <div
+                    class="subtitle-section text-section-grey uppercase border-bottom"
+                  >
+                    <span>ЛИЧНАЯ СТАТИСТИКА</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Купленно лицензий</span>
+                    <span class="text-section-grey">59</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Проданно лицензий</span>
+                    <span class="text-section-grey">180</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Заработано с продаж</span>
+                    <span class="text-section-grey">$ 128 368.00</span>
+                  </div>
+                </div>
+                <div
+                  role="tabpanel"
+                  class="general-statistic tab-pane fade in active"
+                  id="profile"
+                >
+                  <div
+                    class="subtitle-section text-section-grey uppercase border-bottom"
+                  >
+                    <span>СТАТИСТИКА СТРУКТУРЫ</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Купленно лицензий структурой</span>
+                    <span class="text-section-grey">59</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Проданно лицензий структурой</span>
+                    <span class="text-section-grey">180</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Больше всего продал лицензий</span>
+                    <span class="text-section-grey">ooohenrik</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                role="tabpanel"
+                class="tab-pane personal-statistic width-100"
+                id="userSale"
+              >
+                <div
+                  class="subtitle-section text-section-grey uppercase border-bottom"
+                >
+                  <span>ЛИЧНАЯ СТАТИСТИКА</span>
+                </div>
+                <div
+                  class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                >
+                  <span>Купленно лицензий</span>
+                  <span class="text-section-grey">59</span>
+                </div>
+                <div
+                  class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                >
+                  <span>Проданно лицензий</span>
+                  <span class="text-section-grey">180</span>
+                </div>
+                <div
+                  class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                >
+                  <span>Заработано с продаж</span>
+                  <span class="text-section-grey text-align-right"
+                    >$ 128 368.00</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-progress block-fluid">
+            <div class="section-title-grey">
+              <span>МОЙ ПРОГРЕСС</span>
+            </div>
+            <div
+              class="marks-section flex-container justify-content-space-between"
+            >
+              <div class="beginner">
+                <span>Новичок</span>
+              </div>
+              <div class="tourist range-line">
+                <span>Турист</span>
+                <span class="mark"></span>
+              </div>
+              <div class="experienced range-line">
+                <span>Бывалый</span>
+                <span class="mark"></span>
+              </div>
+              <div class="professional range-line">
+                <span>Профи</span>
+                <span class="mark"></span>
+              </div>
+              <div class="expert">
+                <span>Експерт</span>
+              </div>
+            </div>
+            <div class="progress width-100 bottom-indent">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 80%"
+              ></div>
+            </div>
+            <div class="text-section bottom-indent">
+              <span>Ваш статус:</span>
+              <span class="weight-medium"> Профи</span>
+            </div>
+            <div class="text-section">
+              <span
+                >Для получения статуса
+                <span class="weight-medium">Эксперт</span> Вам нужно совершить
+                <span class="weight-medium">25</span> поездок</span
+              >
+            </div>
+
+            <div class="button-section flex-container hover-section">
+              <button class="btn btn-default">
+                <span>Продлить</span>
+              </button>
+              <button class="btn btn-border">
+                <span>Активировать код</span>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="sale-license-section block-fluid flex-container flex-wrap justify-content-space-between align-items-center"
+          >
+            <div
+              class="buy-license-section flex-container justify-content-space-between align-items-center width-100"
+            >
+              <div class="section-title-grey">
+                <span>ЛИЦЕНЗИИ</span>
+              </div>
+              <div class="button-section">
+                <button class="btn btn-default">
+                  <span>Купить лицензии</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="column-1-33">
+              <div
+                class="tariff side-border free-package flex-container flex-column align-items-center"
+              >
+                <div class="section-title-grey large-title uppercase">
+                  <span>BASIC</span>
+                </div>
+                <a
+                  href=""
+                  class="img-section package-bgc-square justify-content-center align-items-center"
+                >
+                  <img src="" alt="" class="fas fa-camera" />
+                </a>
+                <div class="text-section-16">
+                  <a href="">Доступ к ресурсу</a>
+                </div>
+                <div class="button-section">
+                  <button class="btn btn-border">
+                    <span>Бесплатно</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="column-1-33">
+              <div
+                class="tariff economical-package flex-container flex-column align-items-center"
+              >
+                <div class="section-title-grey large-title uppercase">
+                  <span>BASIC</span>
+                </div>
+                <a
+                  href=""
+                  class="img-section package-bgc-square justify-content-center align-items-center"
+                >
+                  <img src="" alt="" class="fas fa-camera" />
+                </a>
+                <div class="text-section-16">
+                  <a href="">Доступ к ресурсу</a>
+                </div>
+                <div class="button-section">
+                  <button class="btn btn-border">
+                    <span>10 USD</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="column-1-33">
+              <div
+                class="tariff side-border standard-package flex-container flex-column align-items-center"
+              >
+                <div class="section-title-grey large-title uppercase">
+                  <span>BASIC</span>
+                </div>
+                <a
+                  href=""
+                  class="img-section package-bgc-square justify-content-center align-items-center"
+                >
+                  <img src="" alt="" class="fas fa-camera" />
+                </a>
+                <div class="text-section-16">
+                  <a href="">Доступ к ресурсу</a>
+                </div>
+                <div class="button-section">
+                  <button class="btn btn-border">
+                    <span>100 USD</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="share-section flex-container justify-content-space-between align-items-center width-100"
+            >
+              <div class="link-section">
+                <div class="button-section flex-container align-items-center">
+                  <button class="btn btn-default">
+                    <i class="far fa-copy"></i>
+                    <span>Копировать</span>
+                  </button>
+                  <div class="text-section">
+                    <span
+                      >Отправить
+                      <span class="weight-medium">платную</span> ссылку на
+                      лицензию</span
+                    >
+                  </div>
+
+                  <button
+                    type="button"
+                    title="Платная ссылка на лицензию"
+                    class="info-help-section"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                  >
+                    <i class="fal fa-question-circle"></i>
+                  </button>
+                </div>
+                <div class="button-section flex-container align-items-center">
+                  <button class="btn btn-default">
+                    <i class="far fa-copy"></i>
+                    <span>Копировать</span>
+                  </button>
+                  <div class="text-section">
+                    <span
+                      >Отправить
+                      <span class="weight-medium">бесплатную</span> ссылку на
+                      лицензию</span
+                    >
+                  </div>
+
+                  <button
+                    type="button"
+                    title="Бесплатная ссылка на лицензию"
+                    class="info-help-section"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                  >
+                    <i class="fal fa-question-circle"></i>
+                  </button>
+                </div>
+              </div>
+
+              <a href="" class="available-licenses border-block-section">
+                <span
+                  >Осталось лицензий:
+                  <span class="weight-medium">125</span></span
+                >
+              </a>
+            </div>
+          </div>
+
+          <div class="scrollbar-inner block-fluid">
+            <div class="table buy block-fluid">
+              <div class="section-title uppercase">
+                <span>МОИ ПОКУПКИ</span>
+              </div>
+
+              <table class="width-100">
+                <tr>
+                  <th class="text-align-left">#</th>
+                  <th class="text-align-left">ТИП</th>
+                  <th class="text-align-left">ДАТА БРОН.</th>
+                  <th class="text-align-right">СТОИМОСТЬ</th>
+                  <th>КОЛ-ВО</th>
+                  <th class="text-align-right">КЭШБЕК</th>
+                </tr>
+
+                <tr>
+                  <td class="hover">1</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">2</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">3</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">4</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">5</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">6</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">7</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">8</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-default">
+        <div class="adaptive-block-section flex-container flex-wrap">
+          <div class="user-status block-fluid flex-container flex-wrap">
+            <div class="user-img">
+              <img src="img/examle.jpg" alt="" class="circle-img-square" />
+            </div>
+            <div
+              class="user-info flex-container flex-column justify-content-space-around"
+            >
+              <div class="large-title">Генрих Мхитарян</div>
+              <span class="nickname">ooohenrik</span>
+              <div
+                class="status-info flex-container align-items-center justify-content-center"
+              >
+                Профи
+              </div>
+            </div>
+            <div
+              class="status-data width-100 flex-container align-items-center justify-content-space-between"
+            >
+              <div
+                class="dropdown column-1-33 link-section flex-container justify-content-center align-items-center"
+              >
+                <button
+                  class="dropdown-toggle flex-container align-items-center"
+                  type="button"
+                  id="linkDropMenuLG"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="true"
+                >
+                  <i class="fal fa-link"></i>
+                  <span class="fas fa-chevron-down arrow-large"></span>
+                </button>
+
+                <ul class="dropdown-menu" aria-labelledby="linkDropMenuLG">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div
+                class="column-1-33 user-id-card height-100 flex-container flex-column justify-content-space-around text-align-center"
+              >
+                <i class="fal fa-id-card-alt"></i>
+                <span>234 488 20</span>
+              </div>
+              <div
+                class="column-1-33 login-sponsor height-100 flex-container flex-column justify-content-space-around text-align-center"
+              >
+                <i class="fal fa-user-tie"></i>
+                <span>loginsponsor</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="license-validity block-fluid flex-container flex-wrap justify-content-space-between align-items-center"
+          >
+            <div
+              class="validity flex-container flex-wrap justify-content-space-around align-items-center width-100"
+            >
+              <div class="section-title">
+                <i class="far fa-check"></i>
+                <span> Лицензия активна</span>
+              </div>
+
+              <div
+                class="license-toggle border-block-section flex-container align-items-center"
+              >
+                <span>Автопродление</span>
+                <input type="checkbox" class="checkbox" id="checkboxLG" />
+                <label class="toggle" for="checkboxLG"></label>
+              </div>
+            </div>
+
+            <div class="border-block width-100"></div>
+
+            <div class="license-term width-100 flex-container flex-wrap">
+              <div class="section-title width-100 bottom-indent">
+                <span>До окончания лицензии</span>
+              </div>
+              <div
+                class="end-term-section width-100 bottom-indent flex-container flex-wrap justify-content-space-between align-items-center"
+              >
+                <div class="end-term">
+                  <span>11 д.</span>
+                  <span>7 ч.</span>
+                  <span>15 м.</span>
+                  <span>58 с.</span>
+                </div>
+                <div class="end-date">
+                  <span>19 янв. 2019 (пт)</span>
+                </div>
+              </div>
+              <div class="progress width-100 bottom-indent">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 70%"
+                ></div>
+              </div>
+            </div>
+            <div class="button-section flex-container">
+              <button class="btn btn-default">
+                <span>Продлить</span>
+              </button>
+              <button class="btn btn-border">
+                <span>Активировать код</span>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="referral-link block-fluid flex-container flex-wrap justify-content-space-between align-items-center"
+          >
+            <div class="uppercase section-title width-100">
+              <span>РЕФЕРАЛЬНАЯ ССЫЛКА</span>
+            </div>
+            <div class="text-section-grey">
+              <span>Ваша реферальная ссылка</span>
+            </div>
+            <button class="btn btn-default">
+              <i class="far fa-copy"></i>
+              <span>Копировать</span>
+            </button>
+          </div>
+
+          <div
+            class="scrollbar-inner sale-statistic block-fluid flex-container flex-wrap justify-content-space-between"
+          >
+            <div
+              class="sale-statistic block-fluid flex-container flex-wrap justify-content-space-between"
+            >
+              <div
+                class="section-title uppercase width-100 flex-container justify-content-space-between align-items-center"
+              >
+                <span>Статистика продаж</span>
+                <ul
+                  class="nav nav-tabs radio-button-section flex-container align-items-center"
+                  role="tablist"
+                >
+                  <li>
+                    <a
+                      href="#homeLG"
+                      class="radio-button"
+                      aria-controls="homeLG"
+                      role="tab"
+                      data-toggle="tab"
+                    ></a>
+                  </li>
+                  <li class="active">
+                    <a
+                      href="#profileLG"
+                      class="radio-button"
+                      aria-controls="profileLG"
+                      role="tab"
+                      data-toggle="tab"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tab panes -->
+              <div class="tab-content width-100">
+                <div
+                  role="tabpanel"
+                  class="personal-statistic tab-pane fade"
+                  id="homeLG"
+                >
+                  <div
+                    class="subtitle-section text-section-grey uppercase border-bottom"
+                  >
+                    <span>ЛИЧНАЯ СТАТИСТИКА</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Купленно лицензий</span>
+                    <span class="text-section-grey">59</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Проданно лицензий</span>
+                    <span class="text-section-grey">180</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Заработано с продаж</span>
+                    <span class="text-section-grey text-align-right"
+                      >$ 128 368.00</span
+                    >
+                  </div>
+                </div>
+                <div
+                  role="tabpanel"
+                  class="general-statistic tab-pane fade in active"
+                  id="profileLG"
+                >
+                  <div
+                    class="subtitle-section text-section-grey uppercase border-bottom"
+                  >
+                    <span>СТАТИСТИКА СТРУКТУРЫ</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Купленно лицензий структурой</span>
+                    <span class="text-section-grey">59</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Проданно лицензий структурой</span>
+                    <span class="text-section-grey">180</span>
+                  </div>
+                  <div
+                    class="text-section flex-container justify-content-space-between align-items-center border-bottom"
+                  >
+                    <span>Больше всего продал лицензий</span>
+                    <span class="text-section-grey">ooohenrik</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="user-wallets block-fluid flex-container flex-wrap justify-content-space-between"
+          >
+            <div
+              class="flex-container width-100 align-items-center justify-content-space-between flex-wrap"
+            >
+              <div
+                class="uppercase section-title width-100 flex-container justify-content-space-between align-items-center"
+              >
+                <span>СТАТИСТИКА</span>
+                <button
+                  class="width-100 flex-container justify-content-flex-end align-items-center"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#userWalletsShowClose-LG, #chevronUp-LG, #chevronDown-LG"
+                  aria-expanded="true"
+                  aria-controls="userWalletsShowClose-LG"
+                >
+                  <span id="chevronUp-LG" class="collapse in"
+                    ><i class="fas fa-chevron-up arrow-large"></i
+                  ></span>
+
+                  <span id="chevronDown-LG" class="collapse"
+                    ><i class="fas fa-chevron-down arrow-large"></i
+                  ></span>
+                </button>
+              </div>
+
+              <div
+                id="userWalletsShowClose-LG"
+                class="collapse in width-100 hide-section"
+              >
+                <div class="well">
+                  <div
+                    class="user-balance width-100 border-bottom flex-container align-items-center justify-content-space-between flex-wrap"
+                  >
+                    <div
+                      class="circle-bgc-square blue flex-container justify-content-center align-items-center"
+                    >
+                      <i class="far fa-wallet icons-font-17 white"></i>
+                    </div>
+                    <div class="text-section-grey">Ваш баланс</div>
+                    <div class="cash-section flex-grow-1 text-align-right">
+                      $ 3 662<span class="decimal-section">.72</span>
+                    </div>
+                    <div
+                      class="button-section flex-container text-align-right width-100 justify-content-flex-end"
+                    >
+                      <button class="btn btn-border">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>Пополнить</span>
+                      </button>
+                      <button class="btn btn-border">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Вывести</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bonus-section width-100 border-bottom flex-container align-items-center justify-content-space-between flex-wrap"
+                  >
+                    <div
+                      class="circle-bgc-square violet flex-container justify-content-center align-items-center"
+                    >
+                      <i class="far fa-gift-card icons-font-17 white"></i>
+                    </div>
+                    <div class="text-section-grey">Бонусный кошелек</div>
+                    <div class="cash-section flex-grow-1 text-align-right">
+                      $ 14 357<span class="decimal-section">.13</span>
+                    </div>
+                    <div
+                      class="button-section flex-container text-align-right width-100 justify-content-flex-end"
+                    >
+                      <button class="btn btn-border">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Вывести</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="cashback-section width-100 flex-container align-items-center justify-content-space-between flex-wrap"
+                  >
+                    <div
+                      class="circle-bgc-square green flex-container justify-content-center align-items-center"
+                    >
+                      <i
+                        class="far fa-credit-card-front icons-font-17 white"
+                      ></i>
+                    </div>
+                    <div class="text-section-grey">Ваш кэшбэк за все время</div>
+                    <div class="cash-section flex-grow-1 text-align-right">
+                      $ 82 357<span class="decimal-section">.13</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-progress block-fluid">
+            <div class="section-title-grey">
+              <span>МОЙ ПРОГРЕСС</span>
+            </div>
+            <div
+              class="marks-section flex-container justify-content-space-between"
+            >
+              <div class="beginner">
+                <span>Новичок</span>
+              </div>
+              <div class="tourist range-line">
+                <span>Турист</span>
+                <span class="mark"></span>
+              </div>
+              <div class="experienced range-line">
+                <span>Бывалый</span>
+                <span class="mark"></span>
+              </div>
+              <div class="professional range-line">
+                <span>Профи</span>
+                <span class="mark"></span>
+              </div>
+              <div class="expert">
+                <span>Експерт</span>
+              </div>
+            </div>
+            <div class="progress width-100 bottom-indent">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 80%"
+              ></div>
+            </div>
+            <div class="text-section bottom-indent">
+              <span>Ваш статус:</span>
+              <span class="weight-medium"> Профи</span>
+            </div>
+            <div class="text-section">
+              <span
+                >Для получения статуса
+                <span class="weight-medium">Эксперт</span> Вам нужно совершить
+                <span class="weight-medium">25</span> поездок</span
+              >
+            </div>
+
+            <div class="button-section flex-container hover-section">
+              <button class="btn btn-default">
+                <span>Продлить</span>
+              </button>
+              <button class="btn btn-border">
+                <span>Активировать код</span>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="sale-license-section block-fluid flex-container flex-wrap justify-content-space-between align-items-center"
+          >
+            <div
+              class="buy-license-section flex-container justify-content-space-between align-items-center width-100"
+            >
+              <div class="section-title-grey">
+                <span>ЛИЦЕНЗИИ</span>
+              </div>
+              <div class="button-section">
+                <button class="btn btn-default">
+                  <span>Купить лицензии</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="column-1-33">
+              <div
+                class="tariff side-border free-package flex-container flex-column align-items-center"
+              >
+                <div class="section-title-grey large-title uppercase">
+                  <span>BASIC</span>
+                </div>
+                <a
+                  href=""
+                  class="img-section package-bgc-square justify-content-center align-items-center"
+                >
+                  <img src="" alt="" class="fas fa-camera" />
+                </a>
+                <div class="text-section-16">
+                  <a href="">Доступ к ресурсу</a>
+                </div>
+                <div class="button-section">
+                  <button class="btn btn-border">
+                    <span>Бесплатно</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="column-1-33">
+              <div
+                class="tariff economical-package flex-container flex-column align-items-center"
+              >
+                <div class="section-title-grey large-title uppercase">
+                  <span>BASIC</span>
+                </div>
+                <a
+                  href=""
+                  class="img-section package-bgc-square justify-content-center align-items-center"
+                >
+                  <img src="" alt="" class="fas fa-camera" />
+                </a>
+                <div class="text-section-16">
+                  <a href="">Доступ к ресурсу</a>
+                </div>
+                <div class="button-section">
+                  <button class="btn btn-border">
+                    <span>10 USD</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="column-1-33">
+              <div
+                class="tariff side-border standard-package flex-container flex-column align-items-center"
+              >
+                <div class="section-title-grey large-title uppercase">
+                  <span>BASIC</span>
+                </div>
+                <a
+                  href=""
+                  class="img-section package-bgc-square justify-content-center align-items-center"
+                >
+                  <img src="" alt="" class="fas fa-camera" />
+                </a>
+                <div class="text-section-16">
+                  <a href="">Доступ к ресурсу</a>
+                </div>
+                <div class="button-section">
+                  <button class="btn btn-border">
+                    <span>100 USD</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="share-section flex-container justify-content-space-between align-items-center width-100"
+            >
+              <div class="link-section">
+                <div class="button-section flex-container align-items-center">
+                  <button class="btn btn-default">
+                    <i class="far fa-copy"></i>
+                    <span>Копировать</span>
+                  </button>
+                  <div class="text-section">
+                    <span
+                      >Отправить
+                      <span class="weight-medium">платную</span> ссылку на
+                      лицензию</span
+                    >
+                  </div>
+
+                  <button
+                    type="button"
+                    title="Платная ссылка на лицензию"
+                    class="info-help-section"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                  >
+                    <i class="fal fa-question-circle"></i>
+                  </button>
+                </div>
+                <div class="button-section flex-container align-items-center">
+                  <button class="btn btn-default">
+                    <i class="far fa-copy"></i>
+                    <span>Копировать</span>
+                  </button>
+                  <div class="text-section">
+                    <span
+                      >Отправить
+                      <span class="weight-medium">бесплатную</span> ссылку на
+                      лицензию</span
+                    >
+                  </div>
+
+                  <button
+                    type="button"
+                    title="Бесплатная ссылка на лицензию"
+                    class="info-help-section"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                  >
+                    <i class="fal fa-question-circle"></i>
+                  </button>
+                </div>
+              </div>
+
+              <a href="" class="available-licenses border-block-section">
+                <span
+                  >Осталось лицензий:
+                  <span class="weight-medium">125</span></span
+                >
+              </a>
+            </div>
+          </div>
+
+          <div class="scrollbar-inner block-fluid">
+            <div class="table buy block-fluid">
+              <div class="section-title uppercase">
+                <span>МОИ ПОКУПКИ</span>
+              </div>
+
+              <table class="width-100">
+                <tr>
+                  <th class="text-align-left">#</th>
+                  <th class="text-align-left">ТИП</th>
+                  <th class="text-align-left">ДАТА БРОН.</th>
+                  <th class="text-align-right">СТОИМОСТЬ</th>
+                  <th>КОЛ-ВО</th>
+                  <th class="text-align-right">КЭШБЕК</th>
+                </tr>
+
+                <tr>
+                  <td class="hover">1</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">2</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">3</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">4</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">5</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">6</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">7</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+                <tr>
+                  <td class="hover">8</td>
+                  <td class="hover">Бронирование отеля</td>
+                  <td class="hover">25.03.2019</td>
+                  <td class="text-align-right hover">567 USD</td>
+                  <td class="text-align-center">2</td>
+                  <td class="text-align-right">17 USD</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="column-100-calc">
+            <div class="news-section width-100">
+              <div class="img-section">
+                <div class="slides">
+                  <div>
+                    <div
+                      class="image-wrap justify-content-center flex-container align-items-center"
+                    >
+                      <img src="img/news-img.jpg" alt="" />
+                    </div>
+
+                    <div class="block-fluid">
+                      <div
+                        class="date-comments-section text-section-grey flex-container flex-wrap"
+                      >
+                        <div class="date">
+                          <i class="fal fa-calendar-alt"></i>
+                          <span> 29 июл. / 2020 </span>
+                        </div>
+                        <a href="" class="comments">
+                          <i class="fal fa-comments-alt"></i>
+                          <span> 125</span>
+                        </a>
+                      </div>
+
+                      <div class="news-title text-align-left">
+                        <span
+                          >Лучшее за неделю: product RED, новые AirPods и
+                          блаблабла...</span
+                        >
+                      </div>
+
+                      <div class="button-section flex-container">
+                        <button class="btn btn-default">
+                          <span>Подробнее</span>
+                        </button>
+                        <button class="btn btn-border">
+                          <span>Ко всем новостям</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="image-wrap justify-content-center flex-container align-items-center"
+                    >
+                      <img src="img/news-img-2.jpg" alt="" />
+                    </div>
+
+                    <div class="block-fluid">
+                      <div
+                        class="date-comments-section text-section-grey flex-container flex-wrap"
+                      >
+                        <div class="date">
+                          <i class="fal fa-calendar-alt"></i>
+                          <span> 29 июл. / 2020 </span>
+                        </div>
+                        <a href="" class="comments">
+                          <i class="fal fa-comments-alt"></i>
+                          <span> 125</span>
+                        </a>
+                      </div>
+
+                      <div class="news-title text-align-left">
+                        <span
+                          >Лучшее за неделю: product RED, новые AirPods и
+                          блаблабла...</span
+                        >
+                      </div>
+
+                      <div class="button-section flex-container">
+                        <button class="btn btn-default">
+                          <span>Подробнее</span>
+                        </button>
+                        <button class="btn btn-border">
+                          <span>Ко всем новостям</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      class="image-wrap justify-content-center flex-container align-items-center"
+                    >
+                      <img src="img/news-img-3.jpg" alt="" />
+                    </div>
+
+                    <div class="block-fluid">
+                      <div
+                        class="date-comments-section text-section-grey flex-container flex-wrap"
+                      >
+                        <div class="date">
+                          <i class="fal fa-calendar-alt"></i>
+                          <span> 29 июл. / 2020 </span>
+                        </div>
+                        <a href="" class="comments">
+                          <i class="fal fa-comments-alt"></i>
+                          <span> 125</span>
+                        </a>
+                      </div>
+
+                      <div class="news-title text-align-left">
+                        <span
+                          >Лучшее за неделю: product RED, новые AirPods и
+                          блаблабла...</span
+                        >
+                      </div>
+
+                      <div class="button-section flex-container">
+                        <button class="btn btn-default">
+                          <span>Подробнее</span>
+                        </button>
+                        <button class="btn btn-border">
+                          <span>Ко всем новостям</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      class="image-wrap justify-content-center flex-container align-items-center"
+                    >
+                      <img src="img/news-img-4.jpg" alt="" />
+                    </div>
+
+                    <div class="block-fluid">
+                      <div
+                        class="date-comments-section text-section-grey flex-container flex-wrap"
+                      >
+                        <div class="date">
+                          <i class="fal fa-calendar-alt"></i>
+                          <span> 29 июл. / 2020 </span>
+                        </div>
+                        <a href="" class="comments">
+                          <i class="fal fa-comments-alt"></i>
+                          <span> 125</span>
+                        </a>
+                      </div>
+
+                      <div class="news-title text-align-left">
+                        <span
+                          >Лучшее за неделю: product RED, новые AirPods и
+                          блаблабла...</span
+                        >
+                      </div>
+
+                      <div class="button-section flex-container">
+                        <button class="btn btn-default">
+                          <span>Подробнее</span>
+                        </button>
+                        <button class="btn btn-border">
+                          <span>Ко всем новостям</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MAIN END -->
+
+    <!--    Loader start    -->
+    <div id="loading">
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <div id="object"></div>
+        </div>
+      </div>
+    </div>
+    <!--    Loader end    -->
+
+    <!-- Slick carousel  -->
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.scrollbar.js"></script>
+
+    <!--    Bootstrap    -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+  </body>
+</html>
