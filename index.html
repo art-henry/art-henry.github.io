@@ -658,7 +658,11 @@
             <div class="subtitle">
               Or leave your contact information, and I will write to you myself:
             </div>
-            <form action="#" class="contacts__form">
+             <form
+              action="https://formspree.io/f/mvojzqdy"
+              method="POST"
+              class="contacts__form"
+            >
               <div class="contacts__input">
                 <input required name="name" id="name" type="text" />
                 <label for="name">Your name</label>
@@ -668,11 +672,11 @@
                 <label for="email">Your mail</label>
               </div>
               <div class="contacts__textarea">
-                <textarea name="text" id="text"></textarea>
+                <textarea name="message" id="text"></textarea>
                 <label for="text">Your message</label>
               </div>
               <div class="contacts__triggers">
-                <button class="btn">Sent message</button>
+                <button type="submit" class="btn">Sent message</button>
                 <div class="contacts__policy">
                   <input required type="checkbox" id="privacy-policy" />
                   <span
