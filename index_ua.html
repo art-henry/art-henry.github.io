@@ -528,7 +528,12 @@
             <div class="subtitle">
               Або залиште свої контактні дані, і я сам напишу вам:
             </div>
-            <form action="#" class="contacts__form">
+            
+             <form
+              action="https://formspree.io/f/mvojzqdy"
+              method="POST"
+              class="contacts__form"
+            >
               <div class="contacts__input">
                 <input required name="name" id="name" type="text" />
                 <label for="name">Ваше ім'я</label>
@@ -538,17 +543,17 @@
                 <label for="email">Ваша електронна адреса</label>
               </div>
               <div class="contacts__textarea">
-                <textarea name="text" id="text"></textarea>
+                <textarea name="message" id="text"></textarea>
                 <label for="text">Ваше повідомлення</label>
               </div>
               <div class="contacts__triggers">
-                <button class="btn">Відправити повідомлення</button>
+                <button type="submit" class="btn">Відправити повідомлення</button>
                 <div class="contacts__policy">
                   <input required type="checkbox" id="privacy-policy" />
-                  <span>
-                    Я ознайомився(-лась) та погоджуюсь з
-                    <a href="/policy_ua.html">політикою конфіденційності</a>
-                  </span>
+                  <span
+                    > Я ознайомився(-лась) та погоджуюсь з
+                    <a href="/policy_ua.html">політикою конфіденційності</a></span
+                  >
                 </div>
               </div>
             </form>
