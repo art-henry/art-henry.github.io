@@ -9,40 +9,8 @@
       modal.style.display = "none";
     }, 3000); // Закривати автоматично після 3 секунд
   }
-  modal.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  // function toggleLanguage() {
-  //   const currentLanguage = localStorage.getItem("language");
-  //   const newLanguage = currentLanguage === "ukr" ? "en" : "ukr";
-  //   localStorage.setItem("language", newLanguage);
-
-  //   if (newLanguage === "ukr") {
-  //     window.location.href = "index_ukr.html";
-  //   } else {
-  //     window.location.href = "index.html";
-  //   }
-  // }
 
   window.addEventListener("load", function () {
-    // const toggleBtn = document.querySelector(".toggle-btn");
-    // if (toggleBtn) {
-    //   toggleBtn.addEventListener("click", toggleLanguage);
-    // }
-
-    // const language = localStorage.getItem("language");
-    // if (language === "ukr") {
-    //   const ukFlag = document.querySelector(".toggle-btn__icon");
-    //   if (ukFlag) {
-    //     ukFlag.src = "icons/uk.png";
-    //   }
-
-    //   const toggleText = document.querySelector(".toggle-btn__text");
-    //   if (toggleText) {
-    //     toggleText.textContent = "UK";
-    //   }
-    // }
     function handleLinkClick(event) {
       if (isMobileDevice()) {
         event.preventDefault(); // Предотвращаем переход по ссылке по умолчанию
@@ -131,31 +99,31 @@
   function isValidForm(form) {
     const nameInput = form.querySelector('input[name="name"]');
     const emailInput = form.querySelector('input[name="email"]');
-    const textArea = form.querySelector('textarea[name="text"]');
+    const textArea = form.querySelector('textarea[name="message"]');
     const privacyCheckbox = form.querySelector("#privacy-policy");
 
     if (!nameInput.value.trim()) {
-      alert("Будь ласка, вкажіть ваше ім'я");
+      alert("Please enter your name.");
       return false;
     }
 
     if (!emailInput.value.trim()) {
-      alert("Нам потрібна ваша електронна адреса для зв'язку з вами");
+      alert("We need your email to contact you.");
       return false;
     }
 
     if (!isValidEmail(emailInput.value.trim())) {
-      alert("Ваша електронна адреса повинна бути у форматі name@domain.com");
+      alert("Please enter a valid email address (e.g., name@example.com).");
       return false;
     }
 
     if (!textArea.value.trim()) {
-      alert("Будь ласка, введіть ваше повідомлення");
+      alert("Please enter your message.");
       return false;
     }
 
     if (!privacyCheckbox.checked) {
-      alert("Будь ласка, погодьтесь з політикою конфіденційності");
+      alert("Please agree to the privacy policy.");
       return false;
     }
 
@@ -171,43 +139,26 @@
   validateForm(".contacts__form");
 
   // Відправка даних на сервер
-  // function sendFormData(form) {
-  //   const formData = new FormData(form);
-
-  //   fetch("mailer/smart.php", {
-  //     method: "POST",
-  //     body: formData,
-  //   })
-  //     .then((response) => response.text())
-  //     .then((data) => {
-  //       if (data.includes("success")) {
-  //         alert("Дані успішно відправлені на сервер!");
-  //       } else {
-  //         alert("Сталася помилка. Будь ласка, спробуйте пізніше.");
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       alert("Сталася помилка. Будь ласка, спробуйте пізніше.");
-  //     });
-  // }
-  // Відправка даних на сервер
   function sendFormData(form) {
+    // const formData = new FormData(form);
+
+    // form.submit();
+
     const formData = new FormData(form);
 
-    fetch("mailer/smart.php", {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => response.text())
-      .then((data) => {
-        if (data.includes("success")) {
-          showModal("Message was sent successfully!"); // Показати повідомлення про успішну відправку
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://formspree.io/f/mvojzqdy", true);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        const response = JSON.parse(xhr.responseText);
+        if (response.ok) {
+          showModal("Message was sent successfully!");
         } else {
-          showModal("Error occurred. Please try again later."); // Показати повідомлення про помилку
+          showModal("Error occurred. Please try again later.");
         }
-      })
-      .catch((error) => {
-        showModal("Error occurred. Please try again later."); // Показати повідомлення про помилку
-      });
+      }
+    };
+    xhr.send(formData);
   }
 })();
