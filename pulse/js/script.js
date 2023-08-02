@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
   // Slider
 
@@ -159,4 +157,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Animated
 
   new WOW().init();
-
+});
