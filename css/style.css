@@ -6721,6 +6721,14 @@ button {
 .resume .subtitle {
   position: relative;
   padding-left: 54px;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  justify-content: center;
+}
+.resume .subtitle .text-section {
+  line-height: inherit;
+  margin-top: 5px;
 }
 .resume p.text-section {
   padding-top: 12px;
@@ -6731,7 +6739,7 @@ button {
 .resume__item::before {
   content: "";
   position: absolute;
-  top: 18px;
+  top: 26px;
   left: -42px;
   width: 41px;
   height: 1px;
