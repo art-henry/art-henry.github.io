@@ -6345,6 +6345,7 @@ button {
   font-weight: 700;
 }
 .btn {
+  text-align: center;
   font-size: 14px;
   font-weight: 700;
   padding: 12px 25px;
@@ -6352,6 +6353,9 @@ button {
   border: none;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s, box-shadow 0.3s;
+}
+.promo .btn {
+  width: 125px;
 }
 
 .btn:hover {
@@ -6404,6 +6408,12 @@ button {
   font-size: 14px;
   font-weight: 700;
 }
+
+.finger-show {
+  width: 125px;
+  opacity: 0.8;
+}
+
 .sidepanel {
   display: flex;
   align-items: center;
@@ -7036,6 +7046,7 @@ button {
   font-weight: bold;
   color: #333;
 }
+
 @media (max-width: 1400px) {
   .contacts__wrapper {
     padding: 0;
@@ -7111,12 +7122,11 @@ button {
     grid-template-rows: 100vh;
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 576px) {
   .container {
     padding: 0 10px;
   }
-}
-@media (max-width: 576px) {
   .sidepanel {
     display: none;
   }
