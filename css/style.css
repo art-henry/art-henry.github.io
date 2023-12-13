@@ -6395,7 +6395,7 @@ button {
 }
 .promo {
   background: linear-gradient(rgba(41, 39, 117, 0.8), rgba(255, 255, 255, 0.5)),
-    url("../img/promo.webp") no-repeat 50% / cover;
+    url("../img/promo.jpg") no-repeat 50% / cover;
   /* background: linear-gradient(
     to right,
     rgba(44, 62, 80, 0.3),
