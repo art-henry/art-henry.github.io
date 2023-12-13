@@ -6389,7 +6389,12 @@ button {
   margin-left: 5px;
 }
 .promo {
-  background: url(../img/main_bg.jpg) no-repeat 50% / cover;
+  /* background: url(../img/main_bg.jpg) no-repeat 50% / cover; */
+  background: linear-gradient(
+    to right,
+    rgba(44, 62, 80, 0.3),
+    rgba(74, 111, 165, 0.7)
+  );
   min-height: 100vh;
 }
 .promo__titles {
