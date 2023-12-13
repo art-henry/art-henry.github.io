@@ -6394,8 +6394,7 @@ button {
   margin-left: 5px;
 }
 .promo {
-  background: linear-gradient(rgba(41, 39, 117, 0.8), rgba(255, 255, 255, 0.5)),
-    url("../img/promo.jpg") no-repeat 50% / cover;
+  background: url("../img/main_bg.jpg") no-repeat 50% / cover;
   /* background: linear-gradient(
     to right,
     rgba(44, 62, 80, 0.3),
