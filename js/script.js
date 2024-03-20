@@ -164,4 +164,109 @@
     };
     xhr.send(formData);
   }
+
+  // videoLoader
+  var videoPlaceholder = document.getElementById("video-placeholder"),
+    playIcon = document.querySelector(".play-icon"),
+    playButtons = document.querySelectorAll(".play-video"),
+    body = document.body;
+
+  function playVideo() {
+    var videoLinkElement = document.querySelector(".video_link"),
+      videoSrc = videoLinkElement ? videoLinkElement.textContent.trim() : "",
+      videoContainer = document.querySelector(".video_review_section"),
+      originalContent = videoContainer.innerHTML; // Зберігаємо оригінальний вміст контейнера
+
+    // Очищаємо контейнер перед додаванням нового елемента
+    if (videoContainer) {
+      videoContainer.innerHTML = "";
+    } else {
+      console.log("Video container not found");
+      return;
+    }
+
+    if (videoLinkElement && videoLinkElement.classList.contains("mediateka")) {
+      // Якщо є клас 'mediateka', створюємо тег <video>
+      var videoElement = document.createElement("video");
+      videoElement.src = videoSrc;
+      videoElement.controls = true; // Дозволяємо контроли відтворення
+      videoElement.autoplay = true; // Автовідтворення
+      videoElement.title = "Video player";
+      videoContainer.appendChild(videoElement);
+
+      // Додаємо обробник подій для відтворення відео
+      videoElement.onended = function () {
+        videoContainer.innerHTML = originalContent; // Повертаємо оригінальний вміст контейнера
+        reattachEventListeners();
+      };
+    } else {
+      // Якщо класу 'mediateka' немає, використовуємо <iframe>
+      videoSrc += "&autoplay=1";
+      var videoIframe = document.createElement("iframe");
+      videoIframe.src = videoSrc;
+      videoIframe.title = "YouTube video player";
+      videoIframe.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      videoIframe.allowFullscreen = true;
+      videoContainer.appendChild(videoIframe);
+    }
+  }
+
+  function reattachEventListeners() {
+    // Перепризначення обробників подій для play-icon та .play-video
+    playIcon = document.querySelector(".play-icon"); // Перепризначення, тому що playIcon втратив свій обробник
+    playButtons = document.querySelectorAll(".play-video"); // Якщо .play-video також використовуються і їх було замінено
+
+    if (playIcon) {
+      playIcon.addEventListener("click", playVideo);
+    }
+
+    playButtons.forEach(function (button) {
+      button.addEventListener("click", handlePlayButtonClick);
+    });
+  }
+
+  function redirectToHomeAndPlayVideo() {
+    // Перенаправлення на головну сторінку з параметром для відтворення відео
+    sessionStorage.setItem("playVideo", "true"); // Встановлюємо флаг у sessionStorage перед перенаправленням
+    var homeUrl = new URL(window.location.origin);
+    window.location.href = homeUrl.href;
+  }
+
+  function handlePlayButtonClick(event) {
+    if (event.target.closest(".play-video")) {
+      // Перевіряємо, чи ми на головній сторінці
+      if (
+        window.location.pathname === "/" ||
+        window.location.pathname === "/index.html"
+      ) {
+        playVideo();
+      } else {
+        redirectToHomeAndPlayVideo();
+      }
+    } else if (event.target.closest(".play-icon")) {
+      playVideo();
+    }
+
+    // Перевірка, чи кнопка знаходиться всередині елемента `aside`
+    if (event.target.closest("aside")) {
+      body.classList.remove("mobile-menu-open");
+    }
+  }
+
+  // Перевірка sessionStorage і відтворення відео
+  if (sessionStorage.getItem("playVideo") === "true") {
+    playVideo();
+    sessionStorage.removeItem("playVideo"); // Видаляємо флаг після відтворення, щоб відео не відтворювалось повторно
+  }
+
+  // Навішування обробників подій на кнопку play-icon
+  if (playIcon && videoPlaceholder) {
+    playIcon.addEventListener("click", playVideo);
+  }
+
+  // Навішування обробників подій на кнопки .play-video
+  playButtons.forEach(function (button) {
+    button.addEventListener("click", handlePlayButtonClick);
+  });
 })();
